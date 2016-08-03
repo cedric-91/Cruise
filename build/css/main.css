@@ -1,0 +1,387 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, C:/xampp/htdocs/cruise/css/main.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 27, C:/xampp/htdocs/cruise/css/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 32, C:/xampp/htdocs/cruise/css/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 41, C:/xampp/htdocs/cruise/css/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 61, C:/xampp/htdocs/cruise/css/main.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 69, C:/xampp/htdocs/cruise/css/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 79, C:/xampp/htdocs/cruise/css/main.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* line 87, C:/xampp/htdocs/cruise/css/main.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 6, C:/xampp/htdocs/cruise/css/main.sass */
+body {
+  font-family: 'Roboto', arial, sans-serif; }
+
+/* line 9, C:/xampp/htdocs/cruise/css/main.sass */
+.cont {
+  height: 300px;
+  width: 100%;
+  background-color: #166678; }
+  /* line 13, C:/xampp/htdocs/cruise/css/main.sass */
+  .cont .inner-cont {
+    height: auto;
+    padding: 0.4em;
+    width: 85%;
+    margin: 0 auto; }
+    /* line 18, C:/xampp/htdocs/cruise/css/main.sass */
+    .cont .inner-cont h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.5em; }
+    /* line 23, C:/xampp/htdocs/cruise/css/main.sass */
+    .cont .inner-cont form {
+      background-color: #7DB9B3;
+      padding: 0.8em 0;
+      width: 80%;
+      margin-left: 90px;
+      box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.4); }
+      /* line 30, C:/xampp/htdocs/cruise/css/main.sass */
+      .cont .inner-cont form select {
+        margin: 0 0.2em;
+        padding: 0.4em 0.8em;
+        border: none; }
+        /* line 34, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form select:first-child {
+          margin-left: 45px; }
+        /* line 38, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form select option:hover {
+          background-color: #eee; }
+      /* line 40, C:/xampp/htdocs/cruise/css/main.sass */
+      .cont .inner-cont form #search {
+        border: none;
+        padding: 0.4em 0.8em;
+        margin-left: 20px;
+        background-color: #2E3837;
+        color: white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
+        /* line 47, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form #search:hover {
+          background-color: #E1F6F4;
+          color: #424242; }
+      /* line 51, C:/xampp/htdocs/cruise/css/main.sass */
+      .cont .inner-cont form span.error {
+        color: red;
+        display: none;
+        margin-left: 65px;
+        padding: 8px 0; }
+
+@media screen and (max-width: 1260px) {
+  /* line 61, C:/xampp/htdocs/cruise/css/main.sass */
+  .cont {
+    height: auto; }
+    /* line 63, C:/xampp/htdocs/cruise/css/main.sass */
+    .cont .inner-cont {
+      height: auto;
+      padding: 0.4em;
+      width: 85%;
+      margin: 0 auto; }
+      /* line 68, C:/xampp/htdocs/cruise/css/main.sass */
+      .cont .inner-cont h1 {
+        font-size: 2.0em; }
+      /* line 70, C:/xampp/htdocs/cruise/css/main.sass */
+      .cont .inner-cont form {
+        padding: 0.4em 0.4em;
+        width: 80%;
+        margin-left: 45px; }
+        /* line 74, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form select {
+          margin: 0.6em 0;
+          padding: 0.8em 0.8em;
+          border: none;
+          display: block;
+          width: 100%; }
+          /* line 80, C:/xampp/htdocs/cruise/css/main.sass */
+          .cont .inner-cont form select:first-child {
+            margin-left: 0; }
+          /* line 84, C:/xampp/htdocs/cruise/css/main.sass */
+          .cont .inner-cont form select option:hover {
+            background-color: #eee; }
+        /* line 86, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form #search {
+          padding: 1em 0.8em;
+          box-sizing: border-box;
+          margin: 10px 0 0 0;
+          width: 100%;
+          display: block; }
+          /* line 92, C:/xampp/htdocs/cruise/css/main.sass */
+          .cont .inner-cont form #search:hover {
+            background-color: #E1F6F4;
+            color: #424242; }
+        /* line 96, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form span.error {
+          color: red;
+          display: none;
+          margin-left: 65px;
+          padding: 8px 0; }
+      /* line 101, C:/xampp/htdocs/cruise/css/main.sass */
+      .cont .inner-cont p {
+        display: block; } }
+
+@media screen and (max-width: 520px) {
+  /* line 106, C:/xampp/htdocs/cruise/css/main.sass */
+  .cont {
+    height: 100vh; }
+    /* line 108, C:/xampp/htdocs/cruise/css/main.sass */
+    .cont .inner-cont {
+      height: auto;
+      padding: 0.4em;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 auto; }
+      /* line 117, C:/xampp/htdocs/cruise/css/main.sass */
+      .cont .inner-cont form {
+        padding: 0.4em 0.4em;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0; }
+        /* line 122, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form select {
+          margin: 0.6em 0;
+          padding: 0.8em 0.8em;
+          border: none;
+          display: block;
+          width: 100%; }
+          /* line 128, C:/xampp/htdocs/cruise/css/main.sass */
+          .cont .inner-cont form select:first-child {
+            margin-left: 0; }
+          /* line 132, C:/xampp/htdocs/cruise/css/main.sass */
+          .cont .inner-cont form select option:hover {
+            background-color: #eee; }
+        /* line 134, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form #search {
+          border: none;
+          padding: 1em 0.8em;
+          box-sizing: border-box;
+          margin: 10px 0 0 0;
+          width: 100%;
+          display: block; }
+          /* line 141, C:/xampp/htdocs/cruise/css/main.sass */
+          .cont .inner-cont form #search:hover {
+            background-color: #E1F6F4;
+            color: #424242; }
+        /* line 145, C:/xampp/htdocs/cruise/css/main.sass */
+        .cont .inner-cont form span.error {
+          color: red;
+          display: none;
+          margin: 0;
+          padding: 0; } }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+/* line 116, C:/xampp/htdocs/cruise/css/main.scss */
+.hidden {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 125, C:/xampp/htdocs/cruise/css/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 143, C:/xampp/htdocs/cruise/css/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 156, C:/xampp/htdocs/cruise/css/main.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 173, C:/xampp/htdocs/cruise/css/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 178, C:/xampp/htdocs/cruise/css/main.scss */
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  /* line 210, C:/xampp/htdocs/cruise/css/main.scss */
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  /* line 219, C:/xampp/htdocs/cruise/css/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+  /* line 223, C:/xampp/htdocs/cruise/css/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  /* line 227, C:/xampp/htdocs/cruise/css/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  /* line 237, C:/xampp/htdocs/cruise/css/main.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  /* line 242, C:/xampp/htdocs/cruise/css/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  /* line 252, C:/xampp/htdocs/cruise/css/main.scss */
+  thead {
+    display: table-header-group; }
+  /* line 257, C:/xampp/htdocs/cruise/css/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+  /* line 261, C:/xampp/htdocs/cruise/css/main.scss */
+  img {
+    max-width: 100% !important; }
+  /* line 267, C:/xampp/htdocs/cruise/css/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  /* line 273, C:/xampp/htdocs/cruise/css/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=main.css.map */
